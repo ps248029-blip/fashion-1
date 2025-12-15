@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rena Takashiro Official Site</title>
+
+<style>
+/* 基本リセット */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* メインセクション（トップ画像＋プロフィール） */
+.main-visual {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.main-visual img {
+  width: 260px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* プロフィール紹介ボックス */
+.profile-box {
+  max-width: 600px;
+}
+.profile-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.profile-box p {
+  margin-top: 10px;
+}
+
+/* 下の背景セクション */
+.section-bg {
+  background-image: url('https://example.com/bg.jpg'); /* 仮の画像URL */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #222;
+}
+.section-bg h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.button-area a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  header nav ul {
+    gap: 10px;
+  }
+  .main-visual {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header>
+  <div class="logo">
+    <img src="https://example.com/logo.png" alt="Logo" width="45"> <!-- 仮URL -->
+    <strong>STARDALIA ENTERTAINMENT</strong>
+  </div>
+  <nav>
+    <ul>
+      <li>Profile</li>
+      <li>History</li>
+      <li>Fanclub</li>
+    </ul>
+  </nav>
+</header>
+
+<!-- メインセクション（画像＋紹介） -->
+<section class="main-visual">
+  <img src="https://example.com/photo1.jpg" alt="model picture"> <!-- 仮URL -->
+  <img src="https://example.com/photo2.jpg" alt="side profile"> <!-- 仮URL -->
+
+  <div class="profile-box">
+    <h1>高城 玲奈<br><span style="font-size:1rem;">Rena Takashiro</span></h1>
+    <p>女優・アーティストとして活動中。最新情報や出演情報はこちらの公式サイトから見ることができます。</p>
+  </div>
+</section>
+
+<!-- 下の背景セクション -->
+<section class="section-bg">
+  <h2>高城玲奈 Official Web Site</h2>
+  <div class="button-area">
+    <a href="#">サイトについて</a>
+    <a href="#">利用規約</a>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  © Stardalia Entertainment Promotion
+</footer>
+
+</body>
+</html>
